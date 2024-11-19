@@ -1,0 +1,193 @@
+.section1 {
+    position: absolute;
+    width: fit-content;
+    display: inline-block;
+    top: 47px;
+    right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 8px;
+  }
+  .section1:hover {
+    background-color: rgb(214, 214, 238);
+    border-radius: 15px;
+  }
+  
+  .header-choose-pre {
+    width: 100%;
+    height: 122px;
+    box-shadow: 5px 1.5px #9795b5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+  }
+  .bklogo-choose {
+    padding-left: 20px;
+    width: 83px;
+    height: 84px;
+    z-index: 100;
+  }
+  .name-choose {
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: right;
+    display: inline-block;
+    height: 29px;
+    z-index: 100;
+  }
+  
+  .welcome-container-pre {
+    position: relative;
+    text-align: center;
+    height: 79vh;
+  }
+  .chm-1-icon-student {
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+  }
+  
+  .welcome-student {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: fit-content;
+    background-color: rgba(93, 90, 136, 0.80);
+    padding: 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    text-align: center;
+    object-fit: cover;
+  }
+  .statement1-student {
+    font-family: var(--font-andika);
+    font-size: 3vw;
+    display: block;
+  }
+  .statement2-student {
+    font-family: var(--font-andika);
+    font-size: 3.5vw;
+  }
+  
+  .intro-container-pre {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--neutral-colors-color-400);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper1-student {
+    height: 100%;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 36px;
+  }
+  
+  .white-space-left-pre,
+  .white-space-right-pre {
+    height: 100%;
+    flex: 1;
+  }
+  
+  .column-1-pre {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .printer-img-container-pre {
+    z-index: 1;  
+  }
+  .printer-img-pre {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .column-2-pre {
+    padding-top: 60px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    justify-content: start;
+    align-items: center;
+  }
+  .heading-student-pre {
+    flex: 0.2;
+    line-height: 46px;
+    width: 90%;
+    justify-content: end;
+    margin-bottom: 15px;
+  }
+  .paragraph-student-pre {
+    margin-bottom: 20px;
+    flex: 0.3;
+    line-height: 46px;
+    width: 90%;
+    font-size: var(--font-size-lg);
+    line-height: 30px;
+    color: var(--neutral-colors-text-gray);
+  }
+  
+  .button-set-pre {
+    gap: 24px;
+  }
+  .master-primary-button-pre {
+    border-radius: 47.27px;
+    border: 1px solid var(--neutral-colors-headings-black);
+    background-color: linear-gradient(90deg, #3f51b5, transparent) #94cfff;
+    padding: var(--padding-9xl) 40px;
+    gap: var(--gap-5xs);
+    font-family: var(--font-andika);
+    line-height: 20px;
+    font-size: var(--text-single-300-regular-size);
+    color: var(--neutral-colors-headings-black);
+    text-decoration: none;
+    transition: background-color 0.5s;
+  }
+  
+  .master-primary-button-pre:hover {
+    background-color: #5D5A88;
+    color: #fff;
+  }
+  .master-primary-button-pre:active {
+    background-color: #12a86e42;
+    transition: background-color 0s;
+  }
+  
+  .trang-chua-dang-nhap {
+    position: relative;
+    background-color: var(--neutral-colors-white);
+    width: 100%;
+    height: 1714px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--neutral-colors-headings-black);
+    font-family: var(--font-andika);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .intro-container-pre {
+      display: flex;
+      flex-direction: column;
+    }
+    .white-space-left-pre {
+      display: none;
+    }
+    .white-space-right-pre {
+      display: none;
+    }
+  }

@@ -1,0 +1,112 @@
+.header-choose {
+    width: 100%;
+    height: 122px;
+    box-shadow: 5px 1.5px #9795b5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .bklogo-choose {
+    padding-left: 20px;
+    width: 83px;
+    height: 84px;
+  }
+  .name-choose {
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: right;
+    display: inline-block;
+    height: 29px;
+  }
+  .bklogo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    margin-top: 30px;
+  }
+  .bklogo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 23vh;
+  }
+  .chosen-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .chosen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-style: solid;
+    border-color: #000;
+    border-left-color: #fff;
+    border-right-color: #fff;
+  }
+  .stu {
+    cursor: pointer;
+    width: 85%;
+    height: 13vh;
+    color: #000;
+    margin: 15px 15px;
+    text-align: center;
+    font-family: Andika;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid #d9d9d9;
+    background-color: #d9d9d9;
+  }
+  .stu:hover {
+    background-color: #5D5A88;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .stu:active {
+    background-color: #12a86e42;
+    transition: 0s;
+  }
+  .admin {
+    cursor: pointer;
+    width: 85%;
+    height: 13vh;
+    margin: 15px 15px;
+    color: #000;
+    text-align: center;
+    font-family: Andika;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+  }
+  .admin:hover {
+    background-color: #5D5A88;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .admin:active {
+    background-color: #12a86e42;
+    transition: 0s;
+  }
+  .biggestcontainer-choose {
+    background-color: var(--neutral-colors-white);
+    width: 100%;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--neutral-colors-headings-black);
+    font-family: var(--font-andika);
+  }
+  
