@@ -9,6 +9,7 @@ import axios from "axios"
 
 const Header = () => {
   const [cookies, removeCookie] = useCookies([]);
+  const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
   const verifyAuthentication = async () => {
     if (!cookies.token) {
@@ -27,8 +28,15 @@ const Header = () => {
   }, [cookies, navigate, removeCookie]);
 
   const handleLogout = () => {
+    setShowModal(true); // Hiển thị modal khi nhấn "Thoát"
+  };
+  const confirmLogout = () => {
     removeCookie("token");
-    navigate("/");
+    setShowModal(false); // Đóng modal
+    navigate("/"); // Chuyển hướng về trang chủ
+  };
+  const cancelLogout = () => {
+    setShowModal(false); // Đóng modal nếu người dùng hủy
   };
 
   return (
@@ -74,6 +82,17 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {showModal && (
+  <div className="modal-overlay d-flex justify-content-center align-items-center">
+    <div className="modal-content">
+      <p className="modal-text">Bạn có chắc muốn đăng xuất?</p>
+      <div className="modal-buttons">
+        <button className="btn btn-primary" onClick={confirmLogout}>Đồng ý</button>
+        <button className="btn btn-danger" onClick={cancelLogout}>Hủy</button>
+      </div>
+    </div>
+  </div>
+)}
     </div>
   );
 };
