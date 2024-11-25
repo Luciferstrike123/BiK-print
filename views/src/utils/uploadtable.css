@@ -1,0 +1,140 @@
+h2 {
+    margin-block-start: 0.53em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  p {
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .upTable {
+    margin-top: 40px;
+    width: 526px;
+    height: 80vh;
+    border: 2px solid #483ea8;
+    font-family: var(--font-andika);
+    position: relative; /* Ensure relative positioning */
+    padding-bottom: 70px; /* Reserve space for the button */
+  }
+  .tableTitle {
+    color: #0f0f0f;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Andika;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .intruc {
+    color: #b80000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Andika;
+    font-size: 20px;  
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .iconBox {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px dashed rgba(56, 78, 183, 0.3);
+    background: #f8f8ff;
+  }
+  .cloud {
+    width: 139px;
+    height: 119px;
+  } 
+  .dtext {
+    color: #483ea8;
+  }
+  .text1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0f0f0f;
+    padding-top: 30px;
+  }
+  .text2 {
+    padding-top: 10px;
+  }
+  .form {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .loading {
+    color: #676767;
+    text-align: center;
+    font-family: Andika;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .oneBtn {
+    width: 433px;
+    top: 5px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0.5px solid #9a9a9a;
+    background: #fff;
+    text-align: left;
+    font-family: var(--font-andika);
+  }
+  .complete {
+    color: #676767;
+    text-align: center;
+    font-family: Andika;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+  }
+  .c1 {
+    width: 430px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 0.5px solid #9a9a9a;
+    background: #fff;
+    text-align: left;
+    font-family: var(--font-andika);
+    height: 30px;
+  }
+  
+  .upTable-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  #finish1 {
+    position: absolute;
+    bottom: 20px; /* Place the button 20px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Correct centering */
+    width: 90%; /* Adjust width as needed */
+    height: 58px;
+    padding: 9px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #483ea8;
+    font-family: var(--font-andika);
+    color: white;
+    z-index: 1; /* Ensure it doesn’t overlap other content unintentionally */
+  }

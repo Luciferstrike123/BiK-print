@@ -57,7 +57,7 @@ const Home = () => {
         <div className="d-flex align-items-start gap-4">
           {/* <!-- Left side - Printer Image --> */}
           <div className="flex-grow-1">
-            <div class="bg-light rounded-3 p-4">
+            <div className="bg-light rounded-3 p-4">
               <img
                 src={logo}
                 alt="Printer illustration"

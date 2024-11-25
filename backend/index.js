@@ -1,11 +1,11 @@
 import express from "express";
 import { PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
-// import printerAPI from "./apis/printerAPI.js";
+import printerAPI from "./apis/printerAPI.js";
 import cors from "cors";
-// import studentAPI from "./apis/studentAPI.js";
-// import printingHistoryAPI from "./apis/printingHistoryAPI.js";
-// import systemPolicyAPI from "./apis/systemPolicyAPI.js";
+import studentAPI from "./apis/studentAPI.js";
+import printingHistoryAPI from "./apis/printingHistoryAPI.js";
+import systemPolicyAPI from "./apis/systemPolicyAPI.js";
 import accountAPI from "./apis/accountAPI.js";
 import cookieParser from "cookie-parser";
 
@@ -39,8 +39,8 @@ app.use(
   })
 );
 
-// app.use("/printers", printerAPI);
-// app.use("/students", studentAPI);
-// app.use("/printingHistory", printingHistoryAPI);
-// app.use("/systemPolicy", systemPolicyAPI);
+app.use("/printers", printerAPI);
+app.use("/students", studentAPI);
+app.use("/printingHistory", printingHistoryAPI);
+app.use("/systemPolicy", systemPolicyAPI);
 app.use("/accounts", accountAPI);

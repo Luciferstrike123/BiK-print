@@ -1,0 +1,156 @@
+h2 {
+    margin-block-start: 0.53em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  p {
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .chooseP {
+    margin-top: 40px;
+    width: 526px;
+    height: 80vh;
+    border: 2px solid #483ea8;
+    font-family: var(--font-andika);
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .chooseTitle {
+    color: #0f0f0f;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Andika;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .instruc1 {
+    height: 39px;
+    color: #b80000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Andika;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosePrinters {
+    width: 90%;
+    height: 240px;
+    border: 1px solid #0f0f0f;
+  }
+  th,
+  td {
+    width: 198px;
+    text-align: center;
+    font-family: var(--font-andika);
+    color: #5d5a88;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  th {
+    font-size: 30px;
+  }
+  td {
+    font-size: 15px;
+  }
+  table tr td:nth-child(1) {
+    width: 300px;
+  }
+  input {
+    width: 24px;
+    height: 24px;
+  }
+  .checkLocate {
+    padding-top: 10px;
+    padding-right: 30px;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .btn-container {
+    width: 100%;
+  }
+  #finish {
+    position: absolute;
+    bottom: 2hj0px;
+    width: 30%;
+    height: 58px;
+    padding: 9px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #483ea8;
+    font-family: var(--font-andika);
+    color: white;
+  }
+  
+  .custom-radio {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .custom-radio input[type="radio"] {
+    opacity: 0;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  .custom-radio label {
+    position: relative;
+    padding-left: 30px; /* Adjust as needed for your design */
+    cursor: pointer;
+  }
+  
+  .custom-radio label::before {
+    content: "";
+    display: flex;
+    width: 20px; /* Size of the radio button */
+    height: 20px; /* Size of the radio button */
+    border: 2px solid #483ea8; /* Border color */
+    border-radius: 50%; /* Rounded shape */
+  }
+  
+  .custom-radio input[type="radio"]:checked + label::before {
+    background-color: #483ea8; /* Fill color when checked */
+  }
+  
+  .custom-radio label::after {
+    content: "";
+    width: 12px; /* Size of the inner circle */
+    height: 12px; /* Size of the inner circle */
+    border-radius: 50%;
+    background: #fff; /* Color of the inner circle */
+    display: none;
+  }
+  
+  .custom-radio input[type="radio"]:checked + label::after {
+    display: flex;
+  }
+  #printing {
+    position: relative;
+    top: +15px;
+  }
+  
