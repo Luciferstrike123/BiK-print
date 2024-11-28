@@ -86,34 +86,39 @@ const ChoosePrinter = (props) => {
               <div> No printer available. Please come back later</div>
             ) : (
               <table className="choosePrinters">
-                <tr>
-                  <th>Kiểu máy</th>
-                  <th>Phòng</th>
-                  <th>Chọn</th>
-                </tr>
-                {printerList.map((val, key) => (
-                  <tr key={key}>
-                    <td>
-                      <div id="printing">{val.name}</div>
-                    </td>
-                    <td>
-                      <div id="printing">{val.location}</div>
-                    </td>
-                    <td>
-                      <div className="custom-radio">
-                        <input
-                          type="radio"
-                          id={`radio${key}`}
-                          name="options"
-                          value={`${val.name}###${val.location}`}
-                          onChange={(e) => handleRadioChange(e)}
-                        />
-                        <label htmlFor={`radio${key}`}></label>
-                      </div>
-                    </td>
+                <thead>
+                  <tr>
+                    <th>Kiểu máy</th>
+                    <th>Phòng</th>
+                    <th>Chọn</th>
                   </tr>
-                ))}
+                </thead>
+                <tbody>
+                  {printerList.map((val, key) => (
+                    <tr key={key}>
+                      <td>
+                        <div id="printing">{val.name}</div>
+                      </td>
+                      <td>
+                        <div id="printing">{val.location}</div>
+                      </td>
+                      <td>
+                        <div className="custom-radio">
+                          <input
+                            type="radio"
+                            id={`radio${key}`}
+                            name="options"
+                            value={`${val.name}###${val.location}`}
+                            onChange={(e) => handleRadioChange(e)}
+                          />
+                          <label htmlFor={`radio${key}`}></label>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
               </table>
+
             )}
           </React.Fragment>
         )}
@@ -122,7 +127,7 @@ const ChoosePrinter = (props) => {
       <div className="checkLocate" onClick={() => navigate("/PrintLocate")}>
         Xem vị trí máy in
       </div>
-      <div className="btn-container justify-content-center">
+      <div className="d-flex btn-container justify-content-center">
         <Button id="finish" onClick={props.onClick} block>
           {props.text}
         </Button>

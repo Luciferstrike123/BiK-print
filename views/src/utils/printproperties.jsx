@@ -187,7 +187,7 @@ const Printproperties = () => {
     <div className="bigbox">
       <h2 className="properTitle">Chọn thuộc tính in</h2>
       <hr className="br" />
-      <div className="pageSize">
+      <div className="pageSize mb-5">
         <div className="text">Cỡ giấy</div>
         <select
           className="chooseSize"
@@ -199,7 +199,7 @@ const Printproperties = () => {
           <option value="A5 (148 x 210)mm">A5 (148 x 210)mm</option>
         </select>
       </div>
-      <div className="pageSide">
+      <div className="pageSide mb-5">
         <div className="text">Số mặt</div>
         <select
           className="chooseSize"
