@@ -5,7 +5,7 @@ import Home from "../components/home/Home";
 import Login1 from "../components/login1/Login1";
 // import AdminLogin1 from "../components/login1/AdminLogin1";
 import Choose from "../components/choose/Choose";
-// import Completeprint from "../components/announcement/completeprint";
+import Completeprint from "../components/announcement/completeprint";
 import Upload from "../components/upload/upload";
 // import Adminusers from "../components/profile/adminusers";
 // import Users from "../components/profile/users";
@@ -23,8 +23,8 @@ return (
         <Route path="/Login1" element={<Login1 />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Upload" element={<Upload />} />
-        {/* <Route path="/Completeprint" element={<Completeprint />} /> */}
-        {/* <Route path="/Profile" element={<Users />} /> */}
+        <Route path="/Completeprint" element={<Completeprint />} />
+        <Route path="/Profile" element={<Users />} />
         <Route path="/PrintLocate" element={<Printlocate />} />
         {/* <Route path="/Payment" element={<Payment />} /> */}
         {/* <Route path="/AdminLogin1" element={<AdminLogin1 />} /> */}
