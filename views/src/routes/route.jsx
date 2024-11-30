@@ -9,7 +9,7 @@ import Choose from "../components/choose/Choose";
 import Upload from "../components/upload/upload";
 // import Adminusers from "../components/profile/adminusers";
 // import Users from "../components/profile/users";
-// import Printlocate from "../components/printlocate/Printlocate";
+import Printlocate from "../components/printlocate/Printlocate";
 // import Help from "../components/help/Help";
 // import Payment from "../components/payment/payment";
 // import AdminHome from "../components/home/AdminHome";
@@ -25,7 +25,7 @@ return (
         <Route path="/Upload" element={<Upload />} />
         {/* <Route path="/Completeprint" element={<Completeprint />} /> */}
         {/* <Route path="/Profile" element={<Users />} /> */}
-        {/* <Route path="/PrintLocate" element={<Printlocate />} /> */}
+        <Route path="/PrintLocate" element={<Printlocate />} />
         {/* <Route path="/Payment" element={<Payment />} /> */}
         {/* <Route path="/AdminLogin1" element={<AdminLogin1 />} /> */}
         {/* <Route path="/AdminHome" element={<AdminHome />} /> */}
