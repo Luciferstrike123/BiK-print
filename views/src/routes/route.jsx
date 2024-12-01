@@ -10,7 +10,7 @@ import Upload from "../components/upload/upload";
 // import Adminusers from "../components/profile/adminusers";
 import Users from "../components/profile/users";
 import Printlocate from "../components/printlocate/Printlocate";
-// import Help from "../components/help/Help";
+import Help from "../components/help/Help";
 // import Payment from "../components/payment/payment";
 import AdminHome from "../components/home/AdminHome";
 // import Cantbuy from "../components/announcement/cantbuy";
@@ -30,7 +30,7 @@ return (
         <Route path="/AdminLogin1" element={<AdminLogin1 />} />
         <Route path="/AdminHome" element={<AdminHome />} />
         {/* <Route path="/AdminUsers" element={<Adminusers />} /> */}
-        {/* <Route path="/help" element={<Help />} /> */}
+        <Route path="/help" element={<Help />} />
         {/* <Route path="/successbuy" element={<Successbuy />} /> */}
         {/* <Route path="/cantbuy" element={<Cantbuy />} /> */}
     </Routes>
