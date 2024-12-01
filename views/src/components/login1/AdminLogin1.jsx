@@ -61,7 +61,7 @@ const AdminLogin1 = () => {
     }
   };
   return (
-    <div className="biggestcontainer">
+    <div className="container-fluid">
       <div className="header-choose-login">
         <img className="bklogo-choose-login" src={logo2} alt="bklogo" />
         <div className="name-choose-login">
@@ -69,40 +69,35 @@ const AdminLogin1 = () => {
         </div>
       </div>
 
-      <div className="login-container-admin">
-        <div className="left-sec-login-admin">
-          <div className="contain1s">
-            <span className="texts">Dịch vụ xác thực tập trung</span>
-            <span className="text1s">Administrator - BKPrint</span>
-          </div>
-
-          <div className="column-admin">
-            <div className="contain2s">
-              <p className="notice1">
-                Bạn cần dùng tài khoản admin để đăng nhập.
-              </p>
-            </div>
-            <img className="pic" src={logo3} alt="picc" />
-          </div>
+      <div className="row d-flex justify-content-center align-items-center">
+        <p className="texts text-center">Dịch vụ xác thực tập trung</p>
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          
+          <p className="text1s">Administrator - BKPrint</p>
+          <p className="notice1">Bạn cần dùng tài khoản admin để đăng nhập.</p>
+          <img src={logo3} class="img-fluid" alt="Sample image" />
         </div>
 
-        <div className="right-sec-login-admin">
-          <div className="loginframe">
-            <span className="title">Nhập thông tin tài khoản</span>
-            <hr />
-          </div>
+        <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <form onSubmit={handleSubmit}>
-            <input
-              className="username"
-              value={username}
-              onChange={handleOnChange}
-              type="text"
-              placeholder="Tên đăng nhập"
-            />
-            <div className="pass">
+            <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <p class="lead fw-normal mb-0 me-3 loginframe">Nhập thông tin tài khoản</p>
+            </div>
+            <hr class="my-4" />
+
+            <div class="mb-3">
+              <input
+                className="username"
+                type="text"
+                placeholder="Tên đăng nhập"
+                value={username}
+                onChange={handleOnChange}
+              />
+            </div>
+            <div class="mb-3 pass">
               <Password onChange={handleOnChange1} value={password} />
             </div>
-            <div className="help">
+            <div class="mb-3 help">
               <NavLink to="/help">Trợ giúp đăng nhập?</NavLink>
             </div>
             <Button className="logbutt" type="submit">
@@ -112,8 +107,8 @@ const AdminLogin1 = () => {
           <ToastContainer />
         </div>
       </div>
-      <div id="Login1Footer">
-       
+
+      <div className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5">
         <Footer />
       </div>
     </div>
