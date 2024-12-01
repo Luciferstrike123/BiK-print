@@ -1,0 +1,285 @@
+.userContainer {
+  position: relative;
+  background-color: var(--neutral-colors-white);
+  font-family: Andika;
+  height: 1714px;
+  width: 100vw;
+  overflow: hidden;
+  color: #5d5a88;
+}
+#addPrinterBtn {
+  width: 152px;
+  height: 61px;
+  margin-left: 10px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 22px;
+  background: var(--neutral-colors-headings-black, #5d5a88);
+  border: none;
+  color: #fff;
+  font-family: Andika;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#addPrinterBtn:hover {
+  background-color: #443f86;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+#addPrinterBtn:active {
+  background-color: #160e86;
+}
+
+.profileImg {
+  position: absolute;
+  top: 191px;
+  left: 163px;
+}
+.information {
+  position: absolute;
+  top: 213px;
+  left: 454px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+}
+.texx {
+  color: #000;
+  font-family: Andika;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.ID {
+  color: #000;
+  font-family: Andika;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.logout {
+  color: #000;
+  font-family: Andika;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.info2 {
+  position: absolute;
+  top: 191px;
+  left: 891px;
+  width: 779px;
+  height: 317px;
+  border-radius: 40px;
+  border: 1px solid #000;
+  background: #fff;
+}
+.mail1,
+.mail2,
+.falcuty1,
+.falcuty2 {
+  position: absolute;
+  margin-left: 50px;
+  margin: 20px 50px;
+  color: #000;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mail1 {
+  top: 30px;
+  font-family: Andika;
+  font-size: 40px;
+}
+.mail2 {
+  top: 83px;
+  font-family: sans-serif;
+  font-size: 35px;
+}
+.falcuty1 {
+  top: 140px;
+  font-family: Andika;
+  font-size: 40px;
+}
+.falcuty2 {
+  top: 195px;
+  font-family: sans-serif;
+  font-size: 35px;
+}
+.firstBreak {
+  position: absolute;
+  width: 1770px;
+  top: 550px;
+  left: 40px;
+  margin-left: 10px;
+}
+.printHis {
+  margin: 10px;
+  left: 50px;
+  position: absolute;
+  display: flex;
+  top: 545px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1740px;
+}
+.printHisTex {
+  color: #000;
+  font-family: Andika;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.datePrint {
+  color: #000;
+  font-family: Andika;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.printHis1 {
+  background-color: #f7f6fe;
+  border: 1px solid black;
+}
+.printHis1-container {
+  position: absolute;
+  top: 650px;
+  left: 50px;
+  display: flex;
+  width: 100%;
+  max-height: 350px;
+  overflow-y: scroll;
+  border-bottom: 1px solid black;
+}
+.hea,
+.dat,
+.hea1,
+.dat1,
+.dat2 {
+  height: 80px;
+  text-align: center;
+  font-family: var(--font-andika);
+  color: #5d5a88;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hea,
+.dat,
+.dat2 {
+  width: 300px;
+}
+.hea,
+.hea1 {
+  font-size: 30px;
+  background-color: white;
+  border: 2px solid #000;
+  position: sticky;
+  top: 0;
+}
+.dat,
+.dat1,
+.dat2 {
+  font-size: 15px;
+}
+.sum1 {
+  position: absolute;
+  top: 1000px;
+  left: 50px;
+  color: #000;
+  font-family: Andika;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sum1Tex {
+  position: relative;
+  top: -31px;
+  left: 53.5px;
+}
+.secondBreak {
+  position: absolute;
+  top: 1095px;
+  width: 1770px;
+  left: 40px;
+  margin-left: 10px;
+}
+.buyHis {
+  margin: 10px;
+  left: 50px;
+  position: absolute;
+  display: flex;
+  top: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1740px;
+}
+.buyHisTex {
+  color: #000;
+  font-family: Andika;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.buyHis1 {
+  background-color: #f7f6fe;
+  border: 1px solid black;
+}
+.buyHis1-container {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 1200px;
+  left: 50px;
+  max-height: 340px;
+  overflow-y: scroll;
+  border-bottom: 1px solid black;
+}
+.hea1,
+.dat1 {
+  width: 580px;
+}
+.dat2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finish {
+  width: 50%;
+  height: 40%;
+  border-radius: 22px;
+  background: #b3ffd4;
+  color: #1f9254;
+  text-align: center;
+}
+.sum2 {
+  position: absolute;
+  top: 1540px;
+  left: 50px;
+  color: #000;
+  font-family: Andika;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
