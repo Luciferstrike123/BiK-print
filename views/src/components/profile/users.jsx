@@ -118,38 +118,38 @@ const Users = () => {
     <div className="container mt-4">
       <Header />
       <div className="row mt-5">
-          <div className="col-lg-4">
-            <div className="card-body text-center">
-              <img src={profileImg} alt="Profile" className="rounded-circle img-fluid" style={{ width: "150px", height: "150px" }}/>
-              <h3 className="my-3">{name}</h3>
-              <p className="text-muted">MSSV: {stdID}</p>
-              <button className="btn btn-outline-danger" onClick={() => navigate("/Home")}>Thoát</button>
-            </div>
+        <div className="col-lg-4">
+          <div className="card-body text-center">
+            <img src={profileImg} alt="Profile" className="rounded-circle img-fluid" style={{ width: "150px", height: "150px" }} />
+            <h3 className="my-3">{name}</h3>
+            <p className="text-muted">MSSV: {stdID}</p>
+            <button className="btn btn-outline-danger" onClick={() => navigate("/Home")}>Thoát</button>
           </div>
-          <div className="col-lg-8">
-            <div className="card mb-4">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-sm-3">
-                    <h3 className="mb-0">Email: </h3>
-                  </div>
-                  <div className="col-sm-9 text-secondary">
-                    <h3>{email}</h3>
-                  </div>
+        </div>
+        <div className="col-lg-8">
+          <div className="card mb-4">
+            <div className="card-body">
+              <div className="row">
+                <div className="col-sm-3">
+                  <h3 className="mb-0">Email: </h3>
                 </div>
-                <div className="row mt-5">
-                  <div className="col-sm-3">
-                    <h3 className="mb-0">Ngành học: </h3>
-                  </div>
-                  <div className="col-sm-9 text-secondary">
-                    <h3>{faculty}</h3>
-                  </div>
+                <div className="col-sm-9 text-secondary">
+                  <h3>{email}</h3>
+                </div>
+              </div>
+              <div className="row mt-5">
+                <div className="col-sm-3">
+                  <h3 className="mb-0">Ngành học: </h3>
+                </div>
+                <div className="col-sm-9 text-secondary">
+                  <h3>{faculty}</h3>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
-      
+
       <div className="row mb-4">
         <h4 className="mb-3">Lịch sử in</h4>
         <div className="row">
@@ -168,10 +168,10 @@ const Users = () => {
             />
           </div>
           <Button className="col-md-2 btn btn-primary" onClick={handleFilteringPrint}>
-          Tìm kiếm
-        </Button>
+            Tìm kiếm
+          </Button>
         </div>
-        
+
         {loading ? (
           <div className="text-center mt-4">
             <CircularProgress />
@@ -205,6 +205,93 @@ const Users = () => {
             </tbody>
           </table>
         )}
+        <div className="sum1">
+          <span>Số tờ </span>
+          <div className="sum1Tex">
+            A3 đã in: {A3Printed}
+            <br />
+            A4 đã in: {A4Printed}
+            <br />
+            A5 đã in: {A5Printed}
+          </div>
+        </div>
+        <hr className="secondBreak" />
+        <div className="buyHis">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "30px",
+            }}
+          >
+            <div className="buyHisTex">Lịch sử mua</div>
+            <div>Balance: {balance} VND</div>
+            <Button id="addPrinterBtn" onClick={() => navigate("/Payment")}>
+              Mua thêm giấy
+            </Button>
+          </div>
+          <div className="datePrint">
+            <div className="datePickerContainer">
+              <DatePicker
+                label="Từ ngày"
+                value={value3}
+                onChange={(newValue) => setValue3(newValue)}
+              />
+              <DatePicker
+                label="Đến ngày"
+                value={value4}
+                onChange={(newValue) => setValue4(newValue)}
+              />
+              <Button className="upd" onClick={() => handleFilteringTran()}>
+                {" "}
+                Tìm kiếm{" "}
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="buyHis1-container">
+          {loading ? (
+            <div className="loading">
+              <CircularProgress />
+              <div>Loading ... </div>
+            </div>
+          ) : (
+            <table className="buyHis1">
+              <tr className="row1">
+                <tr className="row1">
+                  <th className="hea1">Thời gian</th>
+                  <th className="hea1">Số tiền</th>
+                  <th className="hea1">Số tờ</th>
+                  <th className="hea1">Loại giấy</th>
+                </tr>
+                {tranList
+                  .filter((val) => {
+                    const a = compareTimes(
+                      String(beforeTran),
+                      String(val.time)
+                    );
+                    const b = compareTimes(String(afterTran), String(val.time));
+                    return a <= 0 && b >= 0;
+                  })
+                  .map((val, key) => {
+                    return (
+                      <tr className="row1" key={key}>
+                        <td className="dat1">
+                          {val.time /* .format("HH:mm:ss, DD/MM/YYYY") */}
+                        </td>
+                        <td className="dat1">{val.price}</td>
+                        <td className="dat1">{val.purchasedPages}</td>
+                        <td className="dat1">{val.purchasedPaperType}</td>
+                      </tr>
+                    );
+                  })}
+              </tr>
+            </table>
+          )}
+        </div>
+        <span className="sum2">Số tờ còn lại: {remainingPages}(A4)</span>
       </div>
       <Footer />
     </div>

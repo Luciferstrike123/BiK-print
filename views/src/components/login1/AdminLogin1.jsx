@@ -71,21 +71,21 @@ const AdminLogin1 = () => {
 
       <div className="row d-flex justify-content-center align-items-center">
         <p className="texts text-center">Dịch vụ xác thực tập trung</p>
-        <div class="col-md-9 col-lg-6 col-xl-5">
+        <div className="col-md-9 col-lg-6 col-xl-5">
           
           <p className="text1s">Administrator - BKPrint</p>
           <p className="notice1">Bạn cần dùng tài khoản admin để đăng nhập.</p>
-          <img src={logo3} class="img-fluid" alt="Sample image" />
+          <img src={logo3} className="img-fluid" alt="Sample image" />
         </div>
 
         <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <form onSubmit={handleSubmit}>
             <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-              <p class="lead fw-normal mb-0 me-3 loginframe">Nhập thông tin tài khoản</p>
+              <p className="lead fw-normal mb-0 me-3 loginframe">Nhập thông tin tài khoản</p>
             </div>
-            <hr class="my-4" />
+            <hr className="my-4" />
 
-            <div class="mb-3">
+            <div className="mb-3">
               <input
                 className="username"
                 type="text"
@@ -94,10 +94,10 @@ const AdminLogin1 = () => {
                 onChange={handleOnChange}
               />
             </div>
-            <div class="mb-3 pass">
+            <div className="mb-3 pass">
               <Password onChange={handleOnChange1} value={password} />
             </div>
-            <div class="mb-3 help">
+            <div className="mb-3 help">
               <NavLink to="/help">Trợ giúp đăng nhập?</NavLink>
             </div>
             <Button className="logbutt" type="submit">

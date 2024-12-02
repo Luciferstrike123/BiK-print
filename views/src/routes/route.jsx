@@ -11,9 +11,9 @@ import Adminusers from "../components/profile/adminusers";
 import Users from "../components/profile/users";
 import Printlocate from "../components/printlocate/Printlocate";
 import Help from "../components/help/Help";
-// import Payment from "../components/payment/payment";
+import Payment from "../components/payment/payment";
 import AdminHome from "../components/home/AdminHome";
-// import Cantbuy from "../components/announcement/cantbuy";
+import Cantbuy from "../components/announcement/cantbuy";
 // import Successbuy from "../components/announcement/successbuy";
 const Routing = () => {
 return (
@@ -26,13 +26,13 @@ return (
         <Route path="/Completeprint" element={<Completeprint />} />
         <Route path="/Profile" element={<Users />} />
         <Route path="/PrintLocate" element={<Printlocate />} />
-        {/* <Route path="/Payment" element={<Payment />} /> */}
+        <Route path="/Payment" element={<Payment />} />
         <Route path="/AdminLogin1" element={<AdminLogin1 />} />
         <Route path="/AdminHome" element={<AdminHome />} />
         <Route path="/AdminUsers" element={<Adminusers />} />
         <Route path="/help" element={<Help />} />
         {/* <Route path="/successbuy" element={<Successbuy />} /> */}
-        {/* <Route path="/cantbuy" element={<Cantbuy />} /> */}
+        <Route path="/cantbuy" element={<Cantbuy />} />
     </Routes>
 );
 };

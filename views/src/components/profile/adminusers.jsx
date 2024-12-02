@@ -239,13 +239,13 @@ const Adminusers = () => {
             <table className="printHis1">
               <thead>
                 <tr className="row">
-                  <th className="hea">Tên</th>
-                  <th className="hea">MSSV</th>
-                  <th className="hea">Thời gian</th>
-                  <th className="hea">Tên file</th>
-                  <th className="hea">Kiểu máy</th>
-                  <th className="hea">Địa điểm</th>
-                  <th className="hea">Trạng thái</th>
+                  <th className="hea col-2">Tên</th>
+                  <th className="hea col-2">MSSV</th>
+                  <th className="hea col-2">Thời gian</th>
+                  <th className="hea col-2">Tên file</th>
+                  <th className="hea col-2">Kiểu máy</th>
+                  <th className="hea col-1">Địa điểm</th>
+                  <th className="hea col-1">Trạng thái</th>
                 </tr>
               </thead>
               <tbody>
