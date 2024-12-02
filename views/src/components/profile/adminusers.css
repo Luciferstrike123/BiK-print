@@ -1,0 +1,134 @@
+.big-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adminUserContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+}
+
+@media (max-width: 768px) {
+
+    .big-container,
+    .adminUserContainer {
+        padding: 10px;
+    }
+}
+
+.printHis1,
+.buyHis1,
+.typeOfFiles {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.printHis1 thead,
+.buyHis1 thead,
+.typeOfFiles thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.printHis1 th,
+.buyHis1 th,
+.typeOfFiles th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.printHis1 tr:nth-child(even),
+.buyHis1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.printHis1 td,
+.buyHis1 td,
+.typeOfFiles td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.upd,
+#addPrinterBtn1,
+.cButton {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upd:hover,
+#addPrinterBtn1:hover,
+.cButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.addPrinter-input1,
+.addPrinter-input2,
+.addPrinter-input3,
+.addPrinter-input4 {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.addPrinter-input1:focus,
+.addPrinter-input2:focus,
+.addPrinter-input3:focus,
+.addPrinter-input4:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2);
+}
+
+.on,
+.off {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.on {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4caf50;
+}
+
+.off {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+}
+
+.datePickerContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#fixxing {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
