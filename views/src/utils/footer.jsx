@@ -3,10 +3,10 @@ const Footer = () => {
   return (
     <div>
       <div className="wrapper-footer">
-        <div className="left-footer">Bản quyền © Thiếu Nhi</div>
+        <div className="left-footer">Bản quyền © The Liems</div>
         <div className="right-footer">
           <span className="phat-trien-boi-thieu-nhi-cc02">
-            <span>Phát triển bởi Thiếu Nhi</span>
+            <span>Phát triển bởi The Liems</span>
             <span className="span">{` | `}</span>
             <span className="policy">{`Điều khoản & điều kiện`}</span>
             <span className="span1">{` | `}</span>
