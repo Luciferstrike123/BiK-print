@@ -8,7 +8,7 @@ BKPrint là một Dịch vụ In Ấn Thông Minh dành cho sinh viên trường
 
 Phiên bản hiện tại: **1.1.3**
 
-Xem chi tiết lịch sử thay đổi tại tệp [CHANGELOG.md](https://github.com/Luciferstrike123/BiK-print/main/CHANGELOG.md).
+Xem chi tiết lịch sử thay đổi tại tệp [CHANGELOG.md](https://github.com/Luciferstrike123/BiK-print/blob/main/CHANGELOG.md).
 
 ## Tài liệu
 
