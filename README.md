@@ -38,6 +38,20 @@ Tất cả tài liệu và sơ đồ quan trọng được lưu trữ tại thư
 ---
 
 ## Hướng dẫn sử dụng
+Khởi tạo
+
+```
+npm run install-server      # Cài đặt các gói cho server
+npm run controller-client   # Cấu hình controller cho client
+npm run install-client      # Cài đặt các gói cho client
+npm run build-client        # Xây dựng ứng dụng client
+```
+
+Chạy trên 2 cửa sổ terminal khác nhau
+```
+npm run start-server        # Chạy server
+npm run start-client        # Chạy client
+```
 
 ### Sinh viên:
 
